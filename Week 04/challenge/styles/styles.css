@@ -1,0 +1,95 @@
+:root {
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Rock Salt";
+    --paragraph-font: Helvetica, sans-serif;
+    --optional-font: Fantasy;
+}
+
+img {
+    padding: 10px;
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+header p {
+    width: 100%;
+    text-align: center;
+    font-size: 0.55em;
+    margin: 0 auto;
+    font-family: var(--heading-font);
+    color: white;
+    line-height: 1.6;
+
+}
+
+header h1,
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+    color: white;
+}
+
+header h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+    margin: 0 auto;
+    font-family: var(--paragraph-font);
+
+}
+
+a {
+    font-size: 18px;
+    font-family: times;
+}
+
+/* * {
+    border: 0.1px solid blue;
+} */
+
+
+main,
+footer,
+header {
+    background-color: #FFA6C9;
+}
+
+main ol {
+    line-height: 2;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left
+}
+
+main p {
+    padding: 10px;
+    /* font-weight: bold; */
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    margin: 0 auto;
+    color: white;
+    text-align: center
+}
+
+footer {
+    width: 100%;
+    font-size: 10px;
+    font-family: var(--optional-font);
+    margin: 0 auto;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    /* margin: 20px auto; */
+    background-color: #FFA6C9;
+}
+
+h1:hover {
+    color: black;
+}

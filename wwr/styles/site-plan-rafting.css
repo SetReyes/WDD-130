@@ -69,7 +69,7 @@ hr {
 
 header {
     padding: 1em;
-    text-align: center;
+    text-align: center; 
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
 }
