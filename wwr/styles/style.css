@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+
 #content {
     max-width: 1000px;
     margin: 0 auto;
 }
 
 nav a {
-    text-align: center;
     text-decoration: none;
-    color: #0408f3;
+    color: #190542;
+    text-align: center;
+    padding: 35px;
 }
 
 #hero-msg h1 {
     text-align: center;
     color: #8b6737;
 }
+
+h2 {
+    margin: 0;
+}
+
 #hero-msg h4 {
     text-align: center;
     color: #8b6737;
@@ -30,18 +39,23 @@ main section {
 
 /* * {
     border: 0.1px solid blue;
-
 } */
 
 #background {
     height: 500px;
     background-color: rgb(69, 138, 241);
     color: #d9c2a3;
+    margin: 50px 0;
+
 }
 
 body {
-    background-color: #fcfbfb;
     color: #776045;
+    background-color: #fcfbfb;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -56,10 +70,15 @@ nav a:hover {
 
 .book,
 .join {
-    background-color: rgb(133, 220, 226);
-    color: #6c0ee7;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 18px;
+    background-color: #d9c2a3;
+    color: black;
     text-align: center;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .join .book:hover {
@@ -72,12 +91,31 @@ nav a:hover {
     color: #d9c2a3;
 }
 
-.msg, footer {
-    background-color: rgb(69, 138, 241);
+.msg,
+footer {
+    background-color: #6f7364;
+    line-height: 1.5em;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.msg {
+    padding: 35px;
+    margin: 100px 0;
 }
 
 .home-title {
     color: #c4b19a;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -92,18 +130,23 @@ h4 {
 
 .msg h2 {
     color: white;
+
 }
+
 .msg p {
     color: white;
-    font-size: 9px;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 
 }
 
-footer p, a {
+footer p,
+a {
     text-align: left;
-    color:#881160;
+    color: #881160;
     text-decoration: none;
-    
+
 }
 
 footer a:hover {
@@ -112,7 +155,9 @@ footer a:hover {
 
 .icon {
     width: 50px;
+    padding-top: 10px;
 }
+
 .mountains {
     width: 500px;
 }
@@ -123,4 +168,23 @@ footer a:hover {
 
 #hero-img {
     width: 100%;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+
+}
+
+main section img {
+    box-sizing: border-box;
 }
