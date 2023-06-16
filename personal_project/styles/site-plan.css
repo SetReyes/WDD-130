@@ -14,7 +14,7 @@ Fonts are separated by a | */
 
     /* change the values below to your chosen font(s) */
     --heading-font: 'Times New Roman', Times, serif;
-    --paragraph-font: 'Rock Salt', 'Bradley Hand', sans-serif;
+    --paragraph-font: Lato, Helvetica, 'Rock Salt', 'Bradley Hand', sans-serif;
     font-family: Lato, Helvetica, 'Rock Salt', 'Bradley Hand', sans-serif, 'Times New Roman', Times, serif;
 
     /* these colors below should be chosen from among your palette colors above */
@@ -47,6 +47,13 @@ body {
 img {
     display: block;
     margin: 0 auto;
+
+}
+
+body main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
 }
 
 h1,
@@ -85,6 +92,7 @@ p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
     padding: 1em;
+    text-align: justify;
 }
 
 .colors {
@@ -129,6 +137,9 @@ nav {
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 nav {
@@ -206,4 +217,8 @@ nav a:hover {
     grid-area: right;
     border-top: 1px solid;
     border-right: 1px solid;
+}
+
+.center {
+    text-align: center;
 }

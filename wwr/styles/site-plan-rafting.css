@@ -27,7 +27,7 @@ Fonts are separated by a & */
     --nav-link-color: #f4f1de;
     --nav-background-color: #03045e;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #03045e; 
+    --nav-hover-background-color: #03045e;
 }
 
 
@@ -44,7 +44,7 @@ body {
 img {
     display: block;
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 h1,
@@ -69,7 +69,7 @@ hr {
 
 header {
     padding: 1em;
-    text-align: center; 
+    text-align: center;
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
 }
@@ -184,8 +184,8 @@ nav a:hover {
     background-color: #ccc;
     line-height: 3em;
 }
-change
-.top {
+
+change .top {
     grid-area: top;
     border-left: 1px solid;
 }
