@@ -40,20 +40,29 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4em;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
 }
+
 
 img {
     display: block;
     margin: 0 auto;
-
+    max-width: 200px;
 }
 
-body main img {
+.nba_logo {
     display: block;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 300px;
+}
+
+.stats_picture {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    /* max-height: 80%; */
+    background-color: white;
 }
 
 h1,
@@ -145,7 +154,6 @@ nav {
 nav {
     list-style-type: none;
     display: flex;
-
 }
 
 nav a {
@@ -153,7 +161,6 @@ nav a {
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
-
 }
 
 nav a:link,
@@ -222,3 +229,28 @@ nav a:hover {
 .center {
     text-align: center;
 }
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: var(--accent1-color);
+
+}
+
+.table_style {
+    justify-content: space-around;
+    margin: 40px auto 40px auto;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* footer div a:hover {
+    color: #9572eb;
+} */
