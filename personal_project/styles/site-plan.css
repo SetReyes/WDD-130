@@ -73,6 +73,7 @@ header {
     text-align: center;
     color: var(--headline-color-on-color);
     background-color: var(--paragraph-background-color);
+
 }
 
 footer {
@@ -269,6 +270,7 @@ p.colored {
 
 .center {
     text-align: center;
+    margin: 0px 0px 0px 0px;
 }
 
 .title {
@@ -280,4 +282,38 @@ p.colored {
 .table_style {
     justify-content: space-around;
     margin: 40px auto 40px auto;
+}
+
+/* W12 assignment*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    /* background-color: #eee;
+    color: #444; */
+    color: var(accent1-color);
+    background-color: var(--headline-color-on-color);
+    max-width: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border: 1px;
+    outline: none;
+    transition: 0.4s;
+    margin: 20px 20px 20px 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    margin-top: -20px;
+    display: none;
+    overflow: hidden;
 }

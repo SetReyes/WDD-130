@@ -26,29 +26,63 @@ Intended audience: All NBA Basketball Fans -->
     <main>
         <hr />
         <h2><u>Summary</u></h2>
-        <h3>Assists Leader</h3>
+
         <img src="images/nba_team_assistances.jpg" alt="Assistances" />
-        <p class="center">Nikola Jokić</p>
-        <h3>Blocks Leader</h3>
+        <button class="accordion"><b>Assists Leader</b></button>
+        <div class="panel">
+            <p class="center">Nikola Jokić</p>
+        </div>
+
         <img src="images/nba_blocks.jpg" alt="Blocks" />
-        <p class="center">Anthony Davis</p>
-        <h3>Points Leader</h3>
+        <button class="accordion"><b>Blocks Leader</b></button>
+        <div class="panel">
+            <p class="center">Anthony Davis</p>
+        </div>
+
         <img src="images/points.jpg" alt="Points" />
-        <p class="center">Nikola Jokić</p>
-        <h3>Steals Leader</h3>
+        <button class="accordion"><b>Points Leader</b></button>
+        <div class="panel">
+            <p class="center">Nikola Jokić</p>
+        </div>
+
         <img src="images/steals.jpg" alt="Steals" />
-        <p class="center"> Jimmy Butler</p>
-        <h3>Triples Leader</h3>
+        <button class="accordion"><b>Steals Leader</b></button>
+        <div class="panel">
+            <p class="center"> Jimmy Butler</p>
+        </div>
+
         <img src="images/nba_triple.jpg" alt="Triples" />
-        <p class="center">Jamal Murray</p>
-        <h3>Rebounds Leader</h3>
+        <button class="accordion"><b>Triples Leader</b></button>
+        <div class="panel">
+            <p class="center">Jamal Murray</p>
+        </div>
+
         <img src="images/rebound.jpg" alt="Rebounds" />
-        <p class="center">Nikola Jokić</p>
-        <h3>Best Coach</h3>
+        <button class="accordion"><b>Rebounds Leader</b></button>
+        <div class="panel">
+            <p class="center">Nikola Jokić</p>
+        </div>
+
         <img src="images/coach.jpg" alt="Rebounds" />
-        <p class="center">Gregg Popovich</p>
+        <button class="accordion"><b>Best Coach</b></button>
+        <div class="panel">
+            <p class="center">Gregg Popovich</p>
+        </div>
         <hr />
     </main>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () { /* Toggle between adding and
+        removing the "active" class, to highlight the button that controls the panel */ this.classList.toggle("active");
+        /* Toggle between hiding and showing the active panel */ var panel = this.nextElementSibling; if
+                    (panel.style.display === "block") { panel.style.display = "none"; } else { panel.style.display = "block"; }
+            });
+        }
+    </script>
 </body>
 <footer>
     <h3>Visit the following site to get the full schedule information:</h3>
