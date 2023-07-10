@@ -4,7 +4,6 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
-
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #001524;
@@ -33,8 +32,32 @@ Fonts are separated by a | */
     --nav-hover-background-color: #002DF5;
 }
 
+.index_container {
+    max-width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    grid-template-rows: 1fr 1fr 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
+
 
 body {
     max-width: 1200px;
@@ -44,27 +67,28 @@ body {
     text-align: center;
 }
 
+header {
+    max-width: 1200px;
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+footer {
+    max-width: 1200px;
+    background-color: var(--secondary-color);
+    padding: 10px 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 img {
     display: block;
     margin: 0 auto;
     max-width: 200px;
-}
-
-.nba_logo {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-}
-
-
-.home_picture {
-    /* padding-top: 50px; */
-    display: block;
-    margin: 30px auto;
-    max-width: 50%;
-    /* max-height: 80%; */
-    background-color: white;
 }
 
 h1,
@@ -87,13 +111,6 @@ hr {
     background: var(--accent1-color);
 }
 
-header {
-    padding: 1em;
-    text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
-}
-
 header>h1,
 header>h2 {
     color: var(--headline-color-on-color);
@@ -104,6 +121,60 @@ p {
     color: var(--paragraph-color-on-white);
     padding: 1em;
     text-align: justify;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.nba_logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.stats_picture {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: white;
+}
+
+.home_picture {
+    /* padding-top: 50px; */
+    display: block;
+    margin: 30px auto;
+    max-width: 50%;
+    /* max-height: 80%; */
+    background-color: white;
 }
 
 .colors {
@@ -141,38 +212,6 @@ p {
 p.colored {
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
-}
-
-nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-nav {
-    list-style-type: none;
-    display: flex;
-}
-
-nav a {
-    padding: 1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav a:link,
-nav a:visited {
-    color: var(--nav-link-color);
-}
-
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
 }
 
 .sitemap {
@@ -236,23 +275,9 @@ nav a:hover {
     text-align: center;
     font-size: 40px;
     color: var(--accent1-color);
-
 }
 
 .table_style {
     justify-content: space-around;
     margin: 40px auto 40px auto;
 }
-
-footer {
-    background-color: var(--secondary-color);
-    padding: 10px 10px;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* footer div a:hover {
-    color: #9572eb;
-} */
