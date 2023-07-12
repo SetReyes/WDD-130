@@ -1,8 +1,5 @@
-<!-- Purpose statement:To show NBA current season data
-Intended audience: All NBA Basketball Fans -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Basketball Information</title>
@@ -14,84 +11,86 @@ Intended audience: All NBA Basketball Fans -->
         <a class="title" href="games_schedule.html">Schedule</a>
     </nav>
 </head>
-<header>
-    <title>To present statistical data of teams and playes</title>
-    <!-- <link rel="site-plan" href="styles/site-plan.css"> -->
-    <link type="text/css" rel="stylesheet" href="styles/site-plan.css" />
-    <h1 class="title">Statistics</h1>
-    <img class="home_picture" src="images/nba_slam_dunk.jpg" alt="nba_slam_dunk">
-</header>
 
 <body>
-    <main>
-        <hr />
-        <h2><u>Summary</u></h2>
-
-        <img src="images/nba_team_assistances.jpg" alt="Assistances" />
-        <button class="accordion"><b>Assists Leader</b></button>
-        <div class="panel">
-            <p class="center">Nikola Jokić</p>
+    <div class="grid-container">
+        <div class="item1">
+            <title>To present statistical data of teams and playes</title>
+            <!-- <link rel="site-plan" href="styles/site-plan.css"> -->
+            <link type="text/css" rel="stylesheet" href="styles/site-plan.css" />
+            <h1 class="title">Statistics</h1>
+            <img class="home_picture" src="images/nba_slam_dunk.jpg" alt="nba_slam_dunk" height="80%">
         </div>
 
-        <img src="images/nba_blocks.jpg" alt="Blocks" />
-        <button class="accordion"><b>Blocks Leader</b></button>
-        <div class="panel">
-            <p class="center">Anthony Davis</p>
+        <div class="item2">
+            <hr />
+            <h2><u>Summary</u></h2>
+
+            <img src="images/nba_team_assistances.jpg" alt="Assistances" />
+            <button class="accordion"><b>Assists Leader</b></button>
+            <div class="panel">
+                <p class="center">Nikola Jokić</p>
+            </div>
+
+            <img src="images/nba_blocks.jpg" alt="Blocks" />
+            <button class="accordion"><b>Blocks Leader</b></button>
+            <div class="panel">
+                <p class="center">Anthony Davis</p>
+            </div>
+
+            <img src="images/points.jpg" alt="Points" />
+            <button class="accordion"><b>Points Leader</b></button>
+            <div class="panel">
+                <p class="center">Nikola Jokić</p>
+            </div>
+
+            <img src="images/steals.jpg" alt="Steals" />
+            <button class="accordion"><b>Steals Leader</b></button>
+            <div class="panel">
+                <p class="center"> Jimmy Butler</p>
+            </div>
+
+            <img src="images/nba_triple.jpg" alt="Triples" />
+            <button class="accordion"><b>Triples Leader</b></button>
+            <div class="panel">
+                <p class="center">Jamal Murray</p>
+            </div>
+
+            <img src="images/rebound.jpg" alt="Rebounds" />
+            <button class="accordion"><b>Rebounds Leader</b></button>
+            <div class="panel">
+                <p class="center">Nikola Jokić</p>
+            </div>
+
+            <img src="images/coach.jpg" alt="Rebounds" />
+            <button class="accordion"><b>Best Coach</b></button>
+            <div class="panel">
+                <p class="center">Gregg Popovich</p>
+            </div>
+            <hr />
         </div>
-
-        <img src="images/points.jpg" alt="Points" />
-        <button class="accordion"><b>Points Leader</b></button>
-        <div class="panel">
-            <p class="center">Nikola Jokić</p>
+        <div class="item3">
+            <footer>
+                <h3>Visit the following site to get the full schedule information:</h3>
+                <div class="social">
+                    <a href="https://www.nba.com/games" target="_blank">
+                        <img class="stats_picture" src="images/nba.jpg" alt="nba">
+                    </a>
+                </div>
+            </footer>
         </div>
-
-        <img src="images/steals.jpg" alt="Steals" />
-        <button class="accordion"><b>Steals Leader</b></button>
-        <div class="panel">
-            <p class="center"> Jimmy Butler</p>
-        </div>
-
-        <img src="images/nba_triple.jpg" alt="Triples" />
-        <button class="accordion"><b>Triples Leader</b></button>
-        <div class="panel">
-            <p class="center">Jamal Murray</p>
-        </div>
-
-        <img src="images/rebound.jpg" alt="Rebounds" />
-        <button class="accordion"><b>Rebounds Leader</b></button>
-        <div class="panel">
-            <p class="center">Nikola Jokić</p>
-        </div>
-
-        <img src="images/coach.jpg" alt="Rebounds" />
-        <button class="accordion"><b>Best Coach</b></button>
-        <div class="panel">
-            <p class="center">Gregg Popovich</p>
-        </div>
-        <hr />
-    </main>
-
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () { /* Toggle between adding and
-        removing the "active" class, to highlight the button that controls the panel */ this.classList.toggle("active");
-        /* Toggle between hiding and showing the active panel */ var panel = this.nextElementSibling; if
-                    (panel.style.display === "block") { panel.style.display = "none"; } else { panel.style.display = "block"; }
-            });
-        }
-    </script>
-</body>
-<footer>
-    <h3>Visit the following site to get the full schedule information:</h3>
-
-    <div class="social">
-        <a href="https://www.nba.com/games" target="_blank">
-            <img class="stats_picture" src="images/nba.jpg" alt="nba">
-        </a>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () { /* Toggle between adding and
+            removing the "active" class, to highlight the button that controls the panel */ this.classList.toggle("active");
+            /* Toggle between hiding and showing the active panel */ var panel = this.nextElementSibling; if
+                        (panel.style.display === "block") { panel.style.display = "none"; } else { panel.style.display = "block"; }
+                });
+            }
+        </script>
     </div>
-</footer>
+</body>
 
 </html>

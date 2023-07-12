@@ -1,9 +1,11 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
+
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
 
+/* Color definition */
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #001524;
@@ -32,6 +34,7 @@ Fonts are separated by a | */
     --nav-hover-background-color: #002DF5;
 }
 
+/* Grid definition for the index webpage */
 .index_container {
     max-width: 100%;
     height: 100vh;
@@ -56,8 +59,35 @@ Fonts are separated by a | */
     grid-area: footer;
 }
 
-/*  Look around below...but DON'T CHANGE ANYTHING! */
+/* Stats webpage grid definition */
+.item1 {
+    grid-area: header;
+    background-color: var(--accent2-color);
+}
 
+.item2 {
+    grid-area: main;
+}
+
+.item3 {
+    grid-area: footer;
+    margin-top: -40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    grid-template-rows: 800px 1fr 150px;
+}
+
+.grid-container>div {
+    text-align: center;
+}
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
     max-width: 1200px;
