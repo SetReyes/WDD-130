@@ -66,6 +66,7 @@ Fonts are separated by a | */
 }
 
 .item2 {
+    padding-top: 50px;
     grid-area: main;
 }
 
@@ -81,6 +82,15 @@ Fonts are separated by a | */
         'main main main'
         'footer footer footer';
     grid-template-rows: 800px 1fr 150px;
+}
+
+.grid-container-sched {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    grid-template-rows: 450px 1fr 150px;
 }
 
 .grid-container>div {
