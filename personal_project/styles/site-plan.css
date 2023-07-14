@@ -2,8 +2,9 @@
 Any spaces in your font name should be replaced with a +. 
 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
 
 /* Color definition */
 :root {
@@ -49,10 +50,12 @@ Fonts are separated by a | */
 
 .header {
     grid-area: header;
+    background-color: var(--accent2-color);
 }
 
 .main {
     grid-area: main;
+    padding-top: 40px;
 }
 
 .footer {
@@ -93,6 +96,7 @@ Fonts are separated by a | */
     grid-template-rows: 450px 1fr 150px;
 }
 
+
 .grid-container>div {
     text-align: center;
 }
@@ -111,9 +115,8 @@ header {
     max-width: 1200px;
     padding: 1em;
     text-align: center;
-    color: var(--headline-color-on-color);
+    color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
-
 }
 
 footer {
@@ -130,6 +133,12 @@ img {
     display: block;
     margin: 0 auto;
     max-width: 200px;
+}
+
+.stat_img {
+    min-width: 500px;
+    max-height: 400px;
+    min-block-size: 500px;
 }
 
 h1,
@@ -210,11 +219,9 @@ nav a:hover {
 }
 
 .home_picture {
-    /* padding-top: 50px; */
     display: block;
     margin: 30px auto;
     max-width: 50%;
-    /* max-height: 80%; */
     background-color: white;
 }
 
@@ -320,17 +327,25 @@ p.colored {
 }
 
 .table_style {
+    color: var(--headline-color-on-white);
     justify-content: space-around;
     margin: 40px auto 40px auto;
+    border-spacing: 5px;
+    min-height: 300px;
+    min-width: 1000px;
+}
+
+table,
+tr,
+td {
+    border: 2px solid;
 }
 
 /* W12 assignment*/
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    /* background-color: #eee;
-    color: #444; */
-    color: var(accent1-color);
+    color: var(--paragraph-color-on-color);
     background-color: var(--headline-color-on-color);
     max-width: 50%;
     text-transform: uppercase;
@@ -342,12 +357,14 @@ p.colored {
     outline: none;
     transition: 0.4s;
     margin: 20px 20px 20px 20px;
+    font-size: 1em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
     background-color: var(--secondary-color);
+    color: var(--accent1-color);
     font-weight: bold;
 }
 
